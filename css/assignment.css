@@ -1,0 +1,57 @@
+.bottom-padding {
+	padding-bottom: 10px;
+}
+.bottom-padding-lg {
+	padding-bottom: 20px;
+}
+.jumbotron-login-register {
+	width: 500px;
+	margin-top: 100px;
+}
+.result-correct-answers {
+	width: 600px;
+}
+.jumbotron-test {
+	width: 600px;
+	margin-top: 15px;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.test-previous-next {
+	margin-top: 15px;
+}
+.btn-submit-result-margin {
+	margin-right: 10px;
+}
+.objective-answer {
+	text-align: left;
+	padding-bottom: 5px;
+}
+.objective-answer-result {
+	text-align: left;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.top-padding {
+	padding-top: 30px;
+}
+.bg-danger {
+	padding: 10px;
+}
+.bg-success {
+	padding: 10px;
+}
+.bg-warning {
+	padding: 10px;
+}
+.small-width {
+	width: 500px;
+}
+.message-width {
+	width: 500px;
+}

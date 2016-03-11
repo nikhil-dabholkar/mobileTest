@@ -1,0 +1,26 @@
+<div id="testForm" class="text-center top-padding">
+    <center>
+         Hi {{userName}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#/logout">Logout</a>
+        <p class="{{testFormClass}} small-width">{{testFormMessage}}</p>
+        <h4>{{testQuestion}}</h4>
+        <div class="jumbotron jumbotron-test">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div ng-repeat="item in objectives" class="objective-answer">
+                            <input type="radio" ng-model="answer" name="answers" ng-change="saveAnswer(answer)" ng-value="{{item.id}}" value="{{item.id}}">{{item.answer}}
+                        </div>
+                        <div class="test-previous-next">
+                            <button ng-click="getPreviousQuestion();" ng-disabled="checkPreviousIndex()" class="btn btn-primary btn-default btn-lg">Previous</button>
+                            <button ng-click="getNextQuestion();" ng-disabled="checkNextIndex()" class="btn btn-primary btn-default btn-lg">Next</button>            
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="submit-result-padding">       
+            <button ng-click="submitTest();" ng-disabled="isTestAnswered()" class="btn btn-danger btn-lg  pull-right btn-submit-result-margin">Submit</button>
+            <button ng-click="viewResult();" ng-disabled="!isTestAnswered()" class="btn btn-success btn-lg  pull-right btn-submit-result-margin">Result</button> 
+        </div>         
+    </center>
+</div>

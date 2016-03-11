@@ -1,0 +1,30 @@
+<div id="resultForm" class="text-center top-padding">
+    <center>
+         Hi {{userName}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#/logout">Logout</a>
+        <h1>You Scored {{resultPercentage}}%</h1>
+            <div class="container">
+                <div class="row result-correct-answers">
+                    <div class="col-xs-12" ng-repeat="questionItem in questions" >
+                        <h3>{{questionItem.question}}</h3>
+                        <div ng-repeat="answerItem in questionItem.objectives | filter: { correct: false, id: questionItem.userSelection }" class="bg-danger objective-answer-result">
+                            <p>
+                                <h4>You answered incorrect</h4>
+                                <p>{{answerItem.answer}}</p>
+                            </p>                           
+                        </div>
+                        <div ng-repeat="answerItem in questionItem.objectives | filter:{correct : true }" class="bg-danger objective-answer-result" ng-if="answerItem.id != questionItem.userSelection">
+                            <h4>Correct</h4>
+                            <p>{{answerItem.answer}}</p>
+                        </div>                            
+                       
+                        <div ng-repeat="answerItem in questionItem.objectives | filter:{correct : true, id: questionItem.userSelection}" class="bg-success objective-answer-result">
+                            <p>
+                                <h4>Correct</h4>
+                                <p>{{answerItem.answer}}</p>
+                            </p>               
+                        </div>                      
+                    </div>
+                </div>
+            </div>       
+    </center>
+</div>

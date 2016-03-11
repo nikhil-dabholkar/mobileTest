@@ -1,0 +1,28 @@
+<div id="registerForm" class="text-center top-padding">
+    <a href="#/login">Login</a>
+    
+    <center>
+        <p class="{{registerFormClass}} small-width">{{registerFormMessage}}</p>
+        <div class="jumbotron jumbotron-login-register">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="bottom-padding"> 
+                            <input autofocus class="form-control input-lg" type="text" data-ng-model="registerForm.username" name="username" value="" placeholder="Email" required/>
+                        </div>
+                        <div class="bottom-padding"> 
+                            <input class="form-control input-lg" type="password" data-ng-model="registerForm.password" name="password" value="" placeholder="Password" required/>
+                        </div>
+                        <div class="bottom-padding-lg"> 
+                            <input class="form-control input-lg" type="password" data-ng-model="registerForm.repassword" name="password" value="" placeholder="Re-Password" required/>
+                        </div>
+                        <div class="">
+                            <button name="register" data-ng-click="registerLogin()" class="btn btn-primary btn-default btn-lg btn-block">Register</button>
+                            <button name="cancel" data-ng-click="cancelRegistration()" class="btn btn-default btn-lg btn-block">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</div>

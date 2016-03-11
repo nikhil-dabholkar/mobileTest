@@ -1,0 +1,83 @@
+{
+    "questions": [{
+    	"id": "1",
+        "question": "1. Which is not an advantage of using a closure?",
+        "userSelection":0,
+        "objectives": [{
+        	"id": "1",
+            "answer": "A. Prevent pollution of global scope",
+            "correct": false
+        }, {
+        	"id": "2",
+            "answer": "B. Encapsulation",
+            "correct": false
+        }, {
+            "id": "3",
+            "answer": "C. Private properties and methods",
+            "correct": true
+        }, {
+            "id": "4",
+            "answer": "D. Allow conditional use of ‘strict mode’",
+            "correct": false
+        }]
+    }, {
+    	"id": "2",
+        "question": "2. To create a columned list of two­line email subjects and dates for a master­detail view, which are the most semantically correct? ",
+        "userSelection":0,
+        "objectives": [{
+        	"id": "1",
+            "answer": "A. <div>+<span>",
+            "correct": false
+        }, {
+        	"id": "2",
+            "answer": "B. <tr>+<td>",
+            "correct": false
+        }, {
+            "id": "3",
+            "answer": "C. <ul>+<li>",
+            "correct": true
+        }, {
+            "id": "4",
+            "answer": "D. <p>+<br>",
+            "correct": false
+        }, {
+            "id": "5",
+            "answer": "E. none of these",
+            "correct": false
+        }, {
+            "id": "6",
+            "answer": "F. all of these",
+            "correct": false
+        }]
+    }, {
+        "id": "3",
+        "question": "3. To pass an array of strings to a function, you should not use... ",
+        "userSelection":0,
+        "objectives": [{
+            "id": "1",
+            "answer": "A. fn.apply(this, stringsArray)",
+            "correct": false
+        }, {
+            "id": "2",
+            "answer": "B. fn.call(this, stringsArray)",
+            "correct": false
+        }, {
+            "id": "3",
+            "answer": "C. fn.bind(this, stringsArray)",
+            "correct": true
+        }]
+    }, {
+        "id": "4",
+        "question": "5. Given <div id=”outer”><div class=”inner”></div></div>, which of these two is the most performant way to select the inner div? ",
+        "userSelection":0, 
+        "objectives": [{
+            "id": "1",
+            "answer": "a. getElementById(”outer”).children[0]",
+            "correct": false
+        }, {
+            "id": "2",
+            "answer": "b. getElementsByClassName(”inner”)[0]",
+            "correct": true
+        }]
+    }]
+}
